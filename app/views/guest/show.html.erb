@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phone Search</title>
+
+</head>
+<body>
+<h1> Phones requested</h1>
+<table>
+  <tr>
+    <th>Model</th>
+    <th>Technology</th>
+    <th>Status</th>
+    <th>OS</th>
+    <th>CPU</th>
+    <th>Internal</th>
+    <th>Speed</th>
+    <th>GPRS</th>
+    <th>EDGE</th>
+    <th>Dimensions</th>
+    <th>Weight</th>
+    <th>Type</th>
+    <th>Resolution</th>
+    <th>Camera</th>
+    <th>Secondary</th>
+    <th>Pricegroup</th>
+    <th>Colors</th>
+    <th>SAREU</th>
+    <th>SARES</th>
+
+
+  </tr>
+  <% @phones.each do |phone| %>
+      <tr>
+        <td><%= phone[:model] %></td>
+        <td><%= phone[:Technology] %></td>
+        <td><%= phone[:Status] %></td>
+        <td><%= phone[:OS] %></td>
+        <td><%= phone[:CPU] %></td>
+        <td><%= phone[:Internal] %></td>
+        <td><%= phone[:Speed] %></td>
+        <td><%= phone[:GPRS] %></td>
+        <td><%= phone[:EDGE] %></td>
+        <td><%= phone[:Dimensions] %></td>
+        <td><%= phone[:Weight] %></td>
+        <td><%= phone[:Type] %></td>
+        <td><%= phone[:Resolution] %></td>
+        <td><%= phone[:Primary] %></td>
+        <td><%= phone[:Secondary] %></td>
+        <td><%= phone[:Pricegroup] %></td>
+        <td><%= phone[:Colors] %></td>
+        <td><%= phone[:SAREU] %></td>
+        <td><%= phone[:SARES] %></td>
+      </tr>
+  <% end %>
+</table>
+</body>
+</html>
